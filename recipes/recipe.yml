@@ -25,116 +25,115 @@ modules:
       - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
       
     install:
-      - tuned
-      - gnome-keyring
-      - adobe-source-code-pro-fonts
-      - alacritty
-      - android-tools
-      - autossh
-      - bash-color-prompt
-      - bat
-      - bcache-tools
-      - btrfs-progs
-      - cascadia-code-fonts
-      - cifs-utils
-      - cmatrix
-      - codium
-      - containerd.io
-      - cryptsetup
-      - dbus-x11
-      - desktop-file-utils
-      - dmidecode
-      - docker-buildx-plugin
-      - docker-ce
-      - docker-ce-cli
-      - docker-compose-plugin
-      - dua-cli
-      - edk2-ovmf
-      - evtest
-      - evtest
-      - eza
-      - fastfetch
-      - fd-find
-      - firewall-config
-      - fish
-      - fish
-      - flatpak
-      - fuse-sshfs
-      - gcc
-      - genisoimage
-      - git
-      - glx-utils
-      - google-droid-sans-mono-fonts
-      - google-go-mono-fonts
-      - gwe
-      - hplip
-      - ibm-plex-mono-fonts
-      - ifuse
-      - input-remapper
-      - iotop
-      - jetbrains-mono-fonts-all
-      - libappindicator
-      - libimobiledevice
-      - libnotify
-      - libvirt
-      - libxcrypt-compat
-      - lm_sensors
-      - lsof
-      - make
-      - mesa-libGLU
-      - mozilla-fira-mono-fonts
-      - mullvad-vpn
-      - nethogs
-      - p7zip
-      - p7zip-plugins
-      - pciutils
-      - playerctl
-      - podman-compose
-      - podman-tui
-      - podmansh
-      - powerline-fonts
-      - powertop
-      - printer-driver-brlaser
-      - procs
-      - psmisc
-      - pulseaudio-utils
-      - qemu
-      - qemu-char-spice
-      - qemu-device-display-virtio-gpu
-      - qemu-device-display-virtio-vga
-      - qemu-device-usb-redirect
-      - qemu-img
-      - qemu-system-x86-core
-      - qemu-user-binfmt
-      - qemu-user-static
-      - rclone
-      - restic
-      - ripgrep
-      - rocm-hip
-      - rocm-opencl
-      - samba
-      - samba-dcerpc
-      - samba-ldb-ldap-modules
-      - samba-winbind-clients
-      - samba-winbind-modules
-      - sd
-      - solaar
-      - stress-ng
-      - tmux
-      - traceroute
-      - tree
-      - udica
-      - unrar
-      - unzip
-      - usbmuxd
-      - v4l-utils
-      - vazirmatn-fonts
-      - virt-manager
-      - virt-viewer
-      - vulkan-tools
-      - wireguard-tools
-      - wl-clipboard
-      - xpr
+      - tuned  # - A dynamic adaptive system tuning daemon
+      - gnome-keyring  # - Framework for managing passwords and other secrets
+      - adobe-source-code-pro-fonts  # - A set of mono-spaced OpenType fonts designed for coding environments
+      - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
+      - android-tools  # - Android platform tools(adb, fastboot)
+      - autossh  # - Utility to autorestart SSH tunnels
+      - bash-color-prompt  # - Color prompt for bash shell
+      - bat  # - Cat clone with wings
+      - bcache-tools  # - Tools for Linux kernel block layer cache
+      - btrfs-progs  # - Userspace programs for btrfs
+      - cascadia-code-fonts  # - A mono-spaced font designed for programming and terminal emulation
+      - cifs-utils  # - Utilities for mounting and managing CIFS mounts
+      - cmatrix  # - A scrolling 'Matrix'-like screen
+      - codium  # - VS Codium
+      - containerd.io  # - Containerd
+      - cryptsetup  # - Utility for setting up encrypted disks
+      - dbus-x11  # - X11-requiring add-ons for D-BUS
+      - desktop-file-utils  # - Utilities for manipulating .desktop files
+      - dmidecode  # - Tool to analyse BIOS DMI data
+      - docker-buildx-plugin  # - Build plugin for Docker
+      - docker-ce  # - Docker Engine
+      - docker-ce-cli  # - Docker CLI
+      - docker-compose-plugin  # - Docker Compose plugin
+      - dua-cli  # - Tool to conveniently learn about the disk usage of directories
+      - edk2-ovmf  # - UEFI firmware for x86_64 virtual machines
+      - evtest  # - Event device test program
+      - evtest  # - Event device test program
+      - eza  # - Modern replacement for ls
+      - fastfetch  # - Like neofetch, but much faster because written in c
+      - fd-find  # - Fd is a simple, fast and user-friendly alternative to find
+      - firewall-config  # - Firewall configuration application
+      - fish  # - A friendly interactive shell
+      - fish  # - A friendly interactive shell
+      - flatpak  # - Application deployment framework for desktop apps
+      - fuse-sshfs  # - FUSE-Filesystem to access remote filesystems via SSH
+      - gcc  # - Various compilers (C, C++, Objective-C, ...)
+      - genisoimage  # - Creates an image of an ISO9660 file-system
+      - git  # - Fast Version Control System
+      - glx-utils  # - GLX utilities
+      - google-droid-sans-mono-fonts  # - A humanist monospace sans serif typeface
+      - google-go-mono-fonts  # - A humanistic slab-serif mono-space programming font family
+      - gwe  # - System utility designed to provide information of NVIDIA card
+      - hplip  # - HP Linux Imaging and Printing Project
+      - ibm-plex-mono-fonts  # - IBM Plex Mono
+      - ifuse  # - Mount Apple iPhone and iPod touch devices
+      - input-remapper  # - An easy to use tool to change the behaviour of your input devices
+      - iotop  # - Top like utility for I/O
+      - jetbrains-mono-fonts-all  # - All the font packages, generated from jetbrains-mono-fonts
+      - libappindicator  # - Application indicators library
+      - libimobiledevice  # - Library for connecting to mobile devices
+      - libnotify  # - Desktop notification library
+      - libvirt  # - Library providing a simple virtualization API
+      - libxcrypt-compat  # - Compatibility library providing legacy API functions
+      - lm_sensors  # - Hardware monitoring tools
+      - lsof  # - A utility which lists open files on a Linux/UNIX system
+      - make  # - A GNU tool which simplifies the build process for users
+      - mesa-libGLU  # - Mesa libGLU library
+      - mozilla-fira-mono-fonts  # - Monospaced version of Mozilla's Fira font
+      - mullvad-vpn  # - NetworkManager VPN plug-in for IPsec VPN
+      - nethogs  # - A tool resembling top for network traffic
+      - p7zip  # - Very high compression ratio file archiver
+      - p7zip-plugins  # - Very high compression ratio file archiver
+      - pciutils  # - PCI bus related utilities
+      - playerctl  # - Command-line MPRIS-compatible Media Player Controller
+      - podman-compose  # - Run docker-compose.yml using podman
+      - podman-tui  # - Podman Terminal User Interface
+      - podmansh  # - Confined login and user shell using podman
+      - powerline-fonts  # - Powerline symbol font
+      - powertop  # - Power consumption monitor
+      - printer-driver-brlaser  # - Brother laser printer driver
+      - procs  # - Modern replacement for ps
+      - psmisc  # - Utilities for managing processes on your system
+      - pulseaudio-utils  # - PulseAudio sound server utilities
+      - qemu  # - QEMU is a FAST! processor emulator
+      - qemu-char-spice  # - QEMU is a FAST! processor emulator
+      - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulator
+      - qemu-device-display-virtio-vga  # - QEMU is a FAST! processor emulator
+      - qemu-device-usb-redirect  # - QEMU is a FAST! processor emulator
+      - qemu-img  # - QEMU is a FAST! processor emulator
+      - qemu-system-x86-core  # - QEMU is a FAST! processor emulator
+      - qemu-user-binfmt  # - QEMU is a FAST! processor emulator
+      - qemu-user-static  # - QEMU is a FAST! processor emulator
+      - rclone  # - Rsync for cloud storage
+      - restic  # - Fast, secure, efficient backup program
+      - ripgrep  # - Line oriented search tool
+      - rocm-hip  # - ROCm HIP platform and device tool
+      - rocm-opencl  # - ROCm OpenCL Runtime
+      - samba  # - Server and Client software to interoperate with Windows machines
+      - samba-dcerpc  # - Server and Client software to interoperate with Windows machines
+      - samba-ldb-ldap-modules  # - Server and Client software to interoperate with Windows machines
+      - samba-winbind-clients  # - Server and Client software to interoperate with Windows machines
+      - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
+      - sd  # - Intuitive find & replace CLI
+      - solaar  # - Device manager for a wide range of Logitech devices
+      - stress-ng  # - Stress test a computer system in various ways
+      - tmux  # - A terminal multiplexer
+      - traceroute  # - Traces the route taken by packets over an IPv4/IPv6 network
+      - tree  # - File system tree viewer
+      - udica  # - A tool for generating SELinux security policies for containers
+      - unrar  # - Wrapper package for unrar-free
+      - unzip  # - A utility for unpacking zip files
+      - usbmuxd  # - Daemon for communicating with Apple's iOS devices
+      - v4l-utils  # - Utilities for video4linux and DVB devices
+      - vazirmatn-fonts  # - A simple and legible Persian/Arabic typeface
+      - virt-manager  # - Desktop tool for managing virtual machines via libvirt
+      - virt-viewer  # - Virtual Machine Viewer
+      - vulkan-tools  # - Vulkan tools
+      - wireguard-tools  # - Fast, modern, secure VPN tunnel
+      - wl-clipboard  # - Command-line copy/paste utilities for Wayland
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
