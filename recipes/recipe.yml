@@ -198,7 +198,6 @@ modules:
         - org.kde.okular
         - org.keepassxc.KeePassXC
         - org.libreoffice.LibreOffice
-        - org.linux_hardware.hw-probe
         - org.mozilla.Thunderbird
         - org.mozilla.firefox
         - org.remmina.Remmina
@@ -217,6 +216,17 @@ modules:
       - org.kde.kcalc
       - org.kde.gwenview
       - org.kde.elisa
-
+      
+  - type: script
+    snippets:
+      # Setup display manager
+      - "rm -f /etc/systemd/system/display-manager.service"
+      - "ln -s /usr/lib/systemd/system/cosmic-greeter.service /etc/systemd/system/display-manager.service"
+      # System services
+      - "systemctl enable cosmic-greeter.service"
+      - "systemctl enable podman.socket"
+      - "systemctl enable docker.socket"
+    scripts:
+      - build.sh # run config/scripts/build.sh
+      
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
