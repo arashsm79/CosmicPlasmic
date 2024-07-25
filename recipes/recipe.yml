@@ -10,16 +10,11 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
-
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/repo/fedora-%OS_VERSION%/mrduarte-LenovoLegionLinux-fedora-%OS_VERSION%.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
       - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
@@ -27,100 +22,123 @@ modules:
     install:
       # Cosmic Desktop
       - cosmic-desktop # - Cosmic Desktop
-      - tuned  # - A dynamic adaptive system tuning daemon
+      - tuned  # - A dynamic adaptive system tuning daemo
       - gnome-keyring  # - Framework for managing passwords and other secrets
       # CLI Utils
-      - adobe-source-code-pro-fonts  # - A set of mono-spaced OpenType fonts designed for coding environments
       - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
-      - android-tools  # - Android platform tools(adb, fastboot)
+      - android-tools  # - Android platform tools(adb, fastboot
+      - android-udev-rules  # - Udev rules for openrgb
       - autossh  # - Utility to autorestart SSH tunnels
-      - bash-color-prompt  # - Color prompt for bash shell
+      - bash-color-prompt  # - Color prompt for bash shel
       - bat  # - Cat clone with wings
+      - bpftop # - Dynamic real-time view of running eBPF program
       - btrfs-progs  # - Userspace programs for btrfs
-      - cascadia-code-fonts  # - A mono-spaced font designed for programming and terminal emulation
       - cifs-utils  # - Utilities for mounting and managing CIFS mounts
       - cmatrix  # - A scrolling 'Matrix'-like screen
       - codium  # - VS Codium
       - containerd.io  # - Containerd
-      - cryptsetup  # - Utility for setting up encrypted disks
+      - cryptsetup  # - Utility for setting up encrypted disk
       - dbus-x11  # - X11-requiring add-ons for D-BUS
       - desktop-file-utils  # - Utilities for manipulating .desktop files
-      - dmidecode  # - Tool to analyse BIOS DMI data
+      - devpod  # Dev environment manager
+      - distrobox  # - Another tool for containerized command line environments on Linux
+      - dmidecode  # - Tool to analyse BIOS DMI dat
       - docker-buildx-plugin  # - Build plugin for Docker
-      - docker-ce  # - Docker Engine
+      - docker-ce  # - Docker Engin
       - docker-ce-cli  # - Docker CLI
-      - docker-compose-plugin  # - Docker Compose plugin
+      - docker-compose-plugin  # - Docker Compose plugi
       - dua-cli  # - Tool to conveniently learn about the disk usage of directories
-      - edk2-ovmf  # - UEFI firmware for x86_64 virtual machines
-      - eza  # - Modern replacement for ls
-      - fastfetch  # - Like neofetch, but much faster because written in c
+      - edk2-ovmf  # - UEFI firmware for x86_64 virtual machine
+      - eza  # - Modern replacement for l
+      - fastfetch  # - Like neofetch, but much faster because written in 
       - fd-find  # - Fd is a simple, fast and user-friendly alternative to find
+      - ffmpeg  # - A complete solution to record, convert and stream audio and video
+      - ffmpeg-libs  # - A complete solution to record, convert and stream audio and video
+      - ffmpegthumbnailer  # - A complete solution to record, convert and stream audio and video
       - firewall-config  # - Firewall configuration application
-      - fish  # - A friendly interactive shell
-      - flatpak  # - Application deployment framework for desktop apps
-      - fuse-sshfs  # - FUSE-Filesystem to access remote filesystems via SSH
+      - fish  # - A friendly interactive shel
+      - flatpak  # - Application deployment framework for desktop app
+      - flatpak-spawn  # - Application deployment framework for desktop apps
+      - fontconfig  # - Font configuration and customization library
+      - fribidi  # - Library implementing the Unicode Bidirectional Algorithm
+      - fuse  # - File System in Userspace (FUSE) v2 utilities
+      - fuse-libs  # - File System in Userspace (FUSE) v2 utilities
+      - fuse-sshfs  # - FUSE-Filesystem to access remote filesystems via SS
+      - fzf  # - A command-line fuzzy finder written in Go
       - gcc  # - Various compilers (C, C++, Objective-C, ...)
       - genisoimage  # - Creates an image of an ISO9660 file-system
-      - git  # - Fast Version Control System
-      - glx-utils  # - GLX utilities
-      - google-droid-sans-mono-fonts  # - A humanist monospace sans serif typeface
-      - google-go-mono-fonts  # - A humanistic slab-serif mono-space programming font family
-      - gwe  # - System utility designed to provide information of NVIDIA card
-      - hplip  # - HP Linux Imaging and Printing Project
-      - ibm-plex-mono-fonts  # - IBM Plex Mono
+      - git  # - Fast Version Control Syste
+      - glx-utils  # - GLX utilitie
+      - gwe  # - System utility designed to provide information of NVIDIA car
+      - harfbuzz  # - Text shaping library
+      - hplip  # - HP Linux Imaging and Printing Projec
+      - htop  # - Interactive process viewer
       - input-remapper  # - An easy to use tool to change the behaviour of your input devices
       - iotop  # - Top like utility for I/O
-      - jetbrains-mono-fonts-all  # - All the font packages, generated from jetbrains-mono-fonts
+      - just  # - Just a command runner
       - libappindicator  # - Application indicators library
+      - libglvnd-egl  # - EGL support for libglvnd
+      - libglvnd-glx  # - GLX support for libglvnd
+      - libglvnd-opengl  # - OpenGL support for libglvnd
       - libnotify  # - Desktop notification library
-      - libvirt  # - Library providing a simple virtualization API
+      - libthai  # - Thai language support routines
+      - libva-utils  # - Tools for VAAPI (including vainfo)
+      - libvirt  # - Library providing a simple virtualization AP
       - lm_sensors  # - Hardware monitoring tools
+      - lshw  # - Hardware lister
       - lsof  # - A utility which lists open files on a Linux/UNIX system
       - make  # - A GNU tool which simplifies the build process for users
-      - mesa-libGLU  # - Mesa libGLU library
-      - mozilla-fira-mono-fonts  # - Monospaced version of Mozilla's Fira font
-      - mullvad-vpn  # - NetworkManager VPN plug-in for IPsec VPN
-      - nethogs  # - A tool resembling top for network traffic
-      - p7zip  # - Very high compression ratio file archiver
-      - p7zip-plugins  # - Very high compression ratio file archiver
+      - mesa-libGLU  # - Mesa libGLU librar
+      - mullvad-vpn  # - Actuall VP
+      - net-tools  # - Basic networking tools
+      - nethogs  # - A tool resembling top for network traffi
+      - nvme-cli  # - NVMe management command line interface
+      - nvtop  # - GPU process monitoring for various devices
+      - openrgb-udev-rules  # - Udev rules for openrgb
+      - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
+      - p7zip  # - Very high compression ratio file archive
+      - p7zip-plugins  # - Very high compression ratio file archive
       - pciutils  # - PCI bus related utilities
-      - podman-compose  # - Run docker-compose.yml using podman
-      - podman-tui  # - Podman Terminal User Interface
-      - podmansh  # - Confined login and user shell using podman
-      - powerline-fonts  # - Powerline symbol font
+      - powerline-fonts  # - Powerline symbol fon
+      - powerstat  # - Measures the power consumption of a machine
       - powertop  # - Power consumption monitor
-      - procs  # - Modern replacement for ps
+      - procs  # - Modern replacement for p
       - psmisc  # - Utilities for managing processes on your system
       - pulseaudio-utils  # - PulseAudio sound server utilities
-      - qemu  # - QEMU is a FAST! processor emulator
+      - qemu  # - QEMU is a FAST! processor emulato
       - qemu-char-spice  # - QEMU is a FAST! processor emulator
-      - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulator
-      - qemu-device-display-virtio-vga  # - QEMU is a FAST! processor emulator
-      - qemu-device-usb-redirect  # - QEMU is a FAST! processor emulator
-      - qemu-img  # - QEMU is a FAST! processor emulator
-      - qemu-system-x86-core  # - QEMU is a FAST! processor emulator
-      - qemu-user-binfmt  # - QEMU is a FAST! processor emulator
-      - qemu-user-static  # - QEMU is a FAST! processor emulator
+      - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulato
+      - qemu-device-display-virtio-vga  # - QEMU is a FAST! processor emulato
+      - qemu-device-usb-redirect  # - QEMU is a FAST! processor emulato
+      - qemu-img  # - QEMU is a FAST! processor emulato
+      - qemu-system-x86-core  # - QEMU is a FAST! processor emulato
+      - qemu-user-binfmt  # - QEMU is a FAST! processor emulato
+      - qemu-user-static  # - QEMU is a FAST! processor emulato
       - rclone  # - Rsync for cloud storage
-      - ripgrep  # - Line oriented search tool
+      - ripgrep  # - Line oriented search too
       - samba  # - Server and Client software to interoperate with Windows machines
-      - samba-dcerpc  # - Server and Client software to interoperate with Windows machines
-      - samba-ldb-ldap-modules  # - Server and Client software to interoperate with Windows machines
+      - samba-dcerpc  # - Server and Client software to interoperate with Windows machine
+      - samba-ldb-ldap-modules  # - Server and Client software to interoperate with Windows machine
       - samba-winbind-clients  # - Server and Client software to interoperate with Windows machines
       - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
-      - sd  # - Intuitive find & replace CLI
-      - solaar  # - Device manager for a wide range of Logitech devices
-      - tmux  # - A terminal multiplexer
+      - sd  # - Intuitive find & replace CL
+      - smartmontools  # - Tools for monitoring SMART capable hard disks
+      - solaar  # - Device manager for a wide range of Logitech devices  # - Fast Version Control System
+      - squashfs-tools  # - Utility for the creation of squashfs filesystems
+      - symlinks  # - A utility which maintains a system's symbolic links
+      - tcpdump  # - A network traffic monitoring tool
+      - tmux  # - A terminal multiplexe
       - traceroute  # - Traces the route taken by packets over an IPv4/IPv6 network
       - tree  # - File system tree viewer
       - udica  # - A tool for generating SELinux security policies for containers
       - unrar  # - Wrapper package for unrar-free
-      - unzip  # - A utility for unpacking zip files
-      - v4l-utils  # - Utilities for video4linux and DVB devices
+      - unzip  # - A utility for unpacking zip file
+      - v4l-utils  # - Utilities for video4linux and DVB device
       - vazirmatn-fonts  # - A simple and legible Persian/Arabic typeface
-      - virt-manager  # - Desktop tool for managing virtual machines via libvirt
+      - vim  # - A syntax checker for vim programming language
+      - virt-manager  # - Desktop tool for managing virtual machines via libvir
       - virt-viewer  # - Virtual Machine Viewer
-      - vulkan-tools  # - Vulkan tools
+      - vulkan-tools  # - Vulkan tool
       - wireguard-tools  # - Fast, modern, secure VPN tunnel
       - wl-clipboard  # - Command-line copy/paste utilities for Wayland
     remove:
@@ -145,7 +163,6 @@ modules:
         - com.github.flxzt.rnote
         - com.github.jeromerobert.pdfarranger
         - com.github.johnfactotum.Foliate
-        - com.github.marinm.songrec
         - com.github.micahflee.torbrowser-launcher
         - com.github.tchx84.Flatseal
         - com.github.xournalpp.xournalpp
@@ -194,25 +211,48 @@ modules:
         - us.zoom.Zoom
         - website.i2pd.i2pd
       remove:
-      - org.kde.okular
       - org.kde.krdc
-      - org.kde.kolourpaint
       - org.kde.kmines
       - org.kde.kmahjongg
       - org.kde.kcalc
-      - org.kde.gwenview
       - org.kde.elisa
       
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
+        
+  - type: akmods
+      base: main
+      install:
+        - openrgb
+        - v4l2loopback
+        
   - type: script
     snippets:
-      # Setup display manager
+      # Cosmic Desktop
       - "rm -f /etc/systemd/system/display-manager.service"
       - "ln -s /usr/lib/systemd/system/cosmic-greeter.service /etc/systemd/system/display-manager.service"
-      # System services
-      - "systemctl enable cosmic-greeter.service"
-      - "systemctl enable podman.socket"
-      - "systemctl enable docker.socket"
     scripts:
-      - build.sh # run config/scripts/build.sh
+      - build.sh # run files/scripts/build.sh
+      
+  - type: systemd
+    system:
+      enabled:
+        - docker.socket
+        - cosmic-greeter.service
+        
+  - type: files
+    files:
+      - source: usr   # copies `files/usr/*` (* means everything inside it) into your image's `/usr` directory
+        destination: /usr
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
