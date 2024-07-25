@@ -252,7 +252,7 @@ modules:
         
   - type: files
     files:
-      - source: usr   # copies `files/usr/*` (* means everything inside it) into your image's `/usr` directory
-        destination: /usr
+      - source: system   # copies `files/usr/*` (* means everything inside it) into your image's `/usr` directory
+        destination: /
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
