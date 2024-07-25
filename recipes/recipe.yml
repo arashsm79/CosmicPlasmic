@@ -72,6 +72,7 @@ modules:
       - glx-utils  # - GLX utilitie
       - gwe  # - System utility designed to provide information of NVIDIA car
       - harfbuzz  # - Text shaping library
+      - helix # - A post-modern modal text editor written in Rust
       - hplip  # - HP Linux Imaging and Printing Projec
       - htop  # - Interactive process viewer
       - input-remapper  # - An easy to use tool to change the behaviour of your input devices
@@ -92,6 +93,7 @@ modules:
       - mesa-libGLU  # - Mesa libGLU librar
       - mullvad-vpn  # - Actuall VP
       - net-tools  # - Basic networking tools
+      - neovim # - Vim-fork focused on extensibility and agility
       - nethogs  # - A tool resembling top for network traffi
       - nvme-cli  # - NVMe management command line interface
       - nvtop  # - GPU process monitoring for various devices
