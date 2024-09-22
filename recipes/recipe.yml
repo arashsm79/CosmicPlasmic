@@ -23,8 +23,9 @@ modules:
     install:
       # Cosmic Desktop
       - cosmic-desktop # - Cosmic Desktop
-      - tuned  # - A dynamic adaptive system tuning daemo
+      - tuned  # - A dynamic adaptive system tuning daemon
       - gnome-keyring  # - Framework for managing passwords and other secrets
+      - power-profiles-daemon # - Makes power profiles handling available over D-Bus
       # CLI Utils
       - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
       - android-tools  # - Android platform tools(adb, fastboot
@@ -162,6 +163,7 @@ modules:
         - com.anydesk.Anydesk
         - com.bitwarden.desktop
         - com.borgbase.Vorta
+        - com.brave.Browser
         - com.discordapp.Discord
         - com.github.flxzt.rnote
         - com.github.jeromerobert.pdfarranger
@@ -207,6 +209,7 @@ modules:
         - org.mozilla.Thunderbird
         - org.mozilla.firefox
         - org.remmina.Remmina
+        - org.signal.Signal
         - org.telegram.desktop
         - org.videolan.VLC
         - org.zotero.Zotero
@@ -217,7 +220,6 @@ modules:
       - org.kde.krdc
       - org.kde.kmines
       - org.kde.kmahjongg
-      - org.kde.kcalc
       - org.kde.elisa
       
   - type: fonts
@@ -244,6 +246,8 @@ modules:
       # Cosmic Desktop
       - "rm -f /etc/systemd/system/display-manager.service"
       - "ln -s /usr/lib/systemd/system/cosmic-greeter.service /etc/systemd/system/display-manager.service"
+      # Hostname
+      - "hostnamectl hostname cosmicbox"
     scripts:
       - build.sh # run files/scripts/build.sh
       
