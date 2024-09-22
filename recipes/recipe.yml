@@ -4,7 +4,7 @@ name: cosmicplasmic
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-nvidia
+base-image: ghcr.io/ublue-os/cosmic-kinoite-nvidia
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -13,7 +13,6 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/repo/fedora-%OS_VERSION%/mrduarte-LenovoLegionLinux-fedora-%OS_VERSION%.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
@@ -21,11 +20,6 @@ modules:
       - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
       
     install:
-      # Cosmic Desktop
-      - cosmic-desktop # - Cosmic Desktop
-      - tuned  # - A dynamic adaptive system tuning daemon
-      - gnome-keyring  # - Framework for managing passwords and other secrets
-      - power-profiles-daemon # - Makes power profiles handling available over D-Bus
       # CLI Utils
       - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
       - android-tools  # - Android platform tools(adb, fastboot
@@ -108,6 +102,7 @@ modules:
       - powertop  # - Power consumption monitor
       - procs  # - Modern replacement for p
       - psmisc  # - Utilities for managing processes on your system
+      - ptyxis # - A container oriented terminal for GNOME
       - pulseaudio-utils  # - PulseAudio sound server utilities
       - qemu  # - QEMU is a FAST! processor emulato
       - qemu-char-spice  # - QEMU is a FAST! processor emulator
@@ -187,6 +182,7 @@ modules:
         - io.github.giantpinkrobots.bootqt
         - io.github.seadve.Mousai
         - io.github.webcamoid.Webcamoid
+        - io.github.dvlv.boxbuddyrs
         - md.obsidian.Obsidian
         - net.codeindustry.MasterPDFEditor
         - net.fasterland.converseen
@@ -243,11 +239,7 @@ modules:
         
   - type: script
     snippets:
-      # Cosmic Desktop
-      - "rm -f /etc/systemd/system/display-manager.service"
-      - "ln -s /usr/lib/systemd/system/cosmic-greeter.service /etc/systemd/system/display-manager.service"
-      # Hostname
-      - "echo cosmicbox > /etc/hostname"
+      - "echo test"
     scripts:
       - build.sh # run files/scripts/build.sh
       
@@ -255,7 +247,6 @@ modules:
     system:
       enabled:
         - docker.socket
-        - cosmic-greeter.service
         
   - type: files
     files:
