@@ -179,6 +179,7 @@ modules:
         - com.slack.Slack
         - com.usebottles.bottles
         - com.valvesoftware.Steam
+        - com.visualstudio.code
         - fr.handbrake.ghb
         - im.riot.Riot # - Element: Matrix client
         - io.dbeaver.DBeaverCommunity
