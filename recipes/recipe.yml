@@ -15,6 +15,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-%OS_VERSION%/ublue-os-staging-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/mrduarte/LenovoLegionLinux/repo/fedora-%OS_VERSION%/mrduarte-LenovoLegionLinux-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
       - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
@@ -97,6 +98,7 @@ modules:
       - p7zip  # - Very high compression ratio file archive
       - p7zip-plugins  # - Very high compression ratio file archive
       - pciutils  # - PCI bus related utilities
+      - plasma-workspace-x11 # - Xorg support for Plasma
       - powerline-fonts  # - Powerline symbol fon
       - powerstat  # - Measures the power consumption of a machine
       - powertop  # - Power consumption monitor
@@ -104,6 +106,7 @@ modules:
       - psmisc  # - Utilities for managing processes on your system
       - ptyxis # - A container oriented terminal for GNOME
       - pulseaudio-utils  # - PulseAudio sound server utilities
+      - python-envycontrol # - EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvidia Optimus systems
       - qemu  # - QEMU is a FAST! processor emulato
       - qemu-char-spice  # - QEMU is a FAST! processor emulator
       - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulato
@@ -122,8 +125,8 @@ modules:
       - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
       - sd  # - Intuitive find & replace CL
       - smartmontools  # - Tools for monitoring SMART capable hard disks
-      - solaar  # - Device manager for a wide range of Logitech devices  # - Fast Version Control System
       - squashfs-tools  # - Utility for the creation of squashfs filesystems
+      - starship # - The minimal, blazing-fast, and infinitely customizable prompt for any shell
       - symlinks  # - A utility which maintains a system's symbolic links
       - tcpdump  # - A network traffic monitoring tool
       - tmux  # - A terminal multiplexe
