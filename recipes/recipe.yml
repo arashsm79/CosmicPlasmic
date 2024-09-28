@@ -66,9 +66,10 @@ modules:
       - genisoimage  # - Creates an image of an ISO9660 file-system
       - git  # - Fast Version Control Syste
       - glx-utils  # - GLX utilitie
+      - grubby # - Command line tool for updating bootloader configs
       - gwe  # - System utility designed to provide information of NVIDIA car
       - harfbuzz  # - Text shaping library
-      - helix # - A post-modern modal text editor written in Rust
+      - helix # - A post-modern modal text editor writt  en in Rust
       - hplip  # - HP Linux Imaging and Printing Projec
       - htop  # - Interactive process viewer
       - input-remapper  # - An easy to use tool to change the behaviour of your input devices
