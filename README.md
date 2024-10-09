@@ -1,7 +1,6 @@
-# Cosmic Plasmic &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Cosmic Plasmic
 
 Cosmic desktop and KDE Plasma desktop in one image.
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 ## Installation
 
