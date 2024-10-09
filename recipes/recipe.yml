@@ -84,6 +84,8 @@ modules:
       - libva-utils  # - Tools for VAAPI (including vainfo)
       - libvirt  # - Library providing a simple virtualization AP
       - lm_sensors  # - Hardware monitoring tools
+      - lpf-cleartype-fonts # - Non-free fonts
+      - lpf-mscore-fonts # - Non-free fonts
       - lshw  # - Hardware lister
       - lsof  # - A utility which lists open files on a Linux/UNIX system
       - make  # - A GNU tool which simplifies the build process for users
