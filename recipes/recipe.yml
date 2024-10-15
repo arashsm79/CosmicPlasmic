@@ -144,6 +144,7 @@ modules:
       - vulkan-tools  # - Vulkan tool
       - wireguard-tools  # - Fast, modern, secure VPN tunnel
       - wl-clipboard  # - Command-line copy/paste utilities for Wayland
+      - xorg-x11-drv-amdgpu # - AMD GPU video driver
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
