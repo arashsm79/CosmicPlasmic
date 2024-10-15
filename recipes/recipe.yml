@@ -239,7 +239,6 @@ modules:
   - type: akmods
     base: main
     install:
-      - openrgb
       - v4l2loopback
         
   - type: script
