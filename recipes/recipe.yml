@@ -21,7 +21,7 @@ modules:
       - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
       
     install:
-      # CLI Utils
+      - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
       - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
       - android-tools  # - Android platform tools(adb, fastboot
       - android-udev-rules  # - Udev rules for openrgb
