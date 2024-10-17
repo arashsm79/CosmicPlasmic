@@ -143,6 +143,7 @@ modules:
       - virt-viewer  # - Virtual Machine Viewer
       - vulkan-tools  # - Vulkan tool
       - wireguard-tools  # - Fast, modern, secure VPN tunnel
+      - wireshark # - Network traffic analyzer
       - wl-clipboard  # - Command-line copy/paste utilities for Wayland
       - xorg-x11-drv-amdgpu # - AMD GPU video driver
     remove:
