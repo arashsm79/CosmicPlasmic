@@ -38,6 +38,7 @@ modules:
       - dbus-x11  # - X11-requiring add-ons for D-BUS
       - desktop-file-utils  # - Utilities for manipulating .desktop files
       - devpod  # Dev environment manager
+      - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
       - distrobox  # - Another tool for containerized command line environments on Linux
       - dmidecode  # - Tool to analyse BIOS DMI dat
       - docker-buildx-plugin  # - Build plugin for Docker
