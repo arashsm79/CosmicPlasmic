@@ -239,10 +239,10 @@ modules:
         - Roboto
         - Open Sans
         
-  # - type: akmods
-  #   base: main
-  #   install:
-  #     - v4l2loopback
+  - type: akmods
+    base: main
+    install:
+      - v4l2loopback
         
   - type: script
     snippets:
