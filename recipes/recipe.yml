@@ -46,6 +46,7 @@ modules:
       - docker-ce-cli  # - Docker CLI
       - docker-compose-plugin  # - Docker Compose plugi
       - dua-cli  # - Tool to conveniently learn about the disk usage of directories
+      - earlyoom # - Early OOM Daemon for Linux
       - edk2-ovmf  # - UEFI firmware for x86_64 virtual machine
       - eza  # - Modern replacement for l
       - fastfetch  # - Like neofetch, but much faster because written in 
@@ -254,6 +255,7 @@ modules:
     system:
       enabled:
         - docker.socket
+        - earlyoom
         
   - type: files
     files:
