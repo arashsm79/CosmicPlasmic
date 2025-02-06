@@ -30,7 +30,6 @@ modules:
       - bat  # - Cat clone with wings
       - bpftop # - Dynamic real-time view of running eBPF program
       - btrfs-progs  # - Userspace programs for btrfs
-      - c-development # - Development Tools
       - cifs-utils  # - Utilities for mounting and managing CIFS mounts
       - cmatrix  # - A scrolling 'Matrix'-like screen
       - codium  # - VS Codium
@@ -38,7 +37,6 @@ modules:
       - cryptsetup  # - Utility for setting up encrypted disk
       - dbus-x11  # - X11-requiring add-ons for D-BUS
       - desktop-file-utils  # - Utilities for manipulating .desktop files
-      - development-tools # - Development Tools
       - devpod  # Dev environment manager
       - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
       - distrobox  # - Another tool for containerized command line environments on Linux
