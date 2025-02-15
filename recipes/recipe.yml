@@ -171,7 +171,7 @@ modules:
         - com.github.flxzt.rnote
         - com.github.jeromerobert.pdfarranger
         - com.github.johnfactotum.Foliate
-        - com.github.micahflee.torbrowser-launcher
+        - org.torproject.torbrowser-launcher
         - com.github.tchx84.Flatseal
         - com.github.xournalpp.xournalpp
         - com.github.zocker_160.SyncThingy
