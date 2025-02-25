@@ -242,9 +242,9 @@ modules:
         - Open Sans
         
   - type: akmods
-      base: main
-      install:
-        - v4l2loopback
+    base: main
+    install:
+      - v4l2loopback
         
   - type: script
     snippets:
