@@ -5,7 +5,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/cosmic-kinoite-nvidia
-image-version: 41-20250223
+image-version: 41-20250224
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -169,6 +169,7 @@ modules:
         - com.brave.Browser
         - com.discordapp.Discord
         - com.github.flxzt.rnote
+        - com.jeffser.Alpaca
         - com.github.jeromerobert.pdfarranger
         - com.github.johnfactotum.Foliate
         - org.torproject.torbrowser-launcher
@@ -240,10 +241,10 @@ modules:
         - Roboto
         - Open Sans
         
-  # - type: akmods
-  #   base: main
-  #   install:
-  #     - v4l2loopback
+  - type: akmods
+      base: main
+      install:
+        - v4l2loopback
         
   - type: script
     snippets:
