@@ -229,7 +229,6 @@ modules:
           - org.videolan.VLC
           - org.wireshark.Wireshark
           - org.zotero.Zotero
-          - pro.affine.app
           - rest.insomnia.Insomnia
           - us.zoom.Zoom
           - website.i2pd.i2pd
