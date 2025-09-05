@@ -48,7 +48,6 @@ modules:
       - dua-cli  # - Tool to conveniently learn about the disk usage of directories
       - earlyoom # - Early OOM Daemon for Linux
       - edk2-ovmf  # - UEFI firmware for x86_64 virtual machine
-      - eza  # - Modern replacement for l
       - fastfetch  # - Like neofetch, but much faster because written in 
       - fd-find  # - Fd is a simple, fast and user-friendly alternative to find
       - ffmpeg  # - A complete solution to record, convert and stream audio and video
@@ -126,7 +125,6 @@ modules:
       - samba-ldb-ldap-modules  # - Server and Client software to interoperate with Windows machine
       - samba-winbind-clients  # - Server and Client software to interoperate with Windows machines
       - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
-      - sd  # - Intuitive find & replace CL
       - smartmontools  # - Tools for monitoring SMART capable hard disks
       - squashfs-tools  # - Utility for the creation of squashfs filesystems
       - starship # - The minimal, blazing-fast, and infinitely customizable prompt for any shell
