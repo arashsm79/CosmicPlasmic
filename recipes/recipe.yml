@@ -4,8 +4,8 @@ name: cosmicplasmic
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-nvidia
-image-version: 42-20250904
+base-image: ghcr.io/ublue-os/cosmic-nvidia
+image-version: 42-20251020
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -18,7 +18,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
-      - https://raw.githubusercontent.com/arashsm79/vscodium-rpm-repo/main/vscodium.repo
       
     install:
       - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
@@ -32,7 +31,6 @@ modules:
       - btrfs-progs  # - Userspace programs for btrfs
       - cifs-utils  # - Utilities for mounting and managing CIFS mounts
       - cmatrix  # - A scrolling 'Matrix'-like screen
-      - codium  # - VS Codium
       - containerd.io  # - Containerd
       - cryptsetup  # - Utility for setting up encrypted disk
       - dbus-x11  # - X11-requiring add-ons for D-BUS
