@@ -156,15 +156,19 @@ modules:
         scope: system
         install:
           - app.grayjay.Grayjay
+          - app.moosync.moosync
           - com.anydesk.Anydesk
           - com.belmoussaoui.Authenticator
           - com.bitwarden.desktop
           - com.borgbase.Vorta
           - com.brave.Browser
           - com.discordapp.Discord
+          - com.github.KRTirtho.Spotube
           - com.github.flxzt.rnote
+          - com.github.hluk.copyq
           - com.github.jeromerobert.pdfarranger
           - com.github.johnfactotum.Foliate
+          - com.github.muriloventuroso.pdftricks
           - com.github.tchx84.Flatseal
           - com.github.wwmm.easyeffects
           - com.github.xournalpp.xournalpp
@@ -172,7 +176,9 @@ modules:
           - com.jeffser.Alpaca
           - com.jgraph.drawio.desktop
           - com.logseq.Logseq
+          - com.mattermost.Desktop
           - com.mojang.Minecraft
+          - com.nextcloud.desktopclient.nextcloud
           - com.obsproject.Studio
           - com.ranfdev.Geopard
           - com.rtosta.zapzap
@@ -183,6 +189,8 @@ modules:
           - com.valvesoftware.Steam
           - com.visualstudio.code
           - com.zettlr.Zettlr
+          - dev.alextren.Spot
+          - dev.zed.Zed
           - fr.handbrake.ghb
           - im.riot.Riot
           - io.dbeaver.DBeaverCommunity
@@ -227,6 +235,7 @@ modules:
           - org.videolan.VLC
           - org.wireshark.Wireshark
           - org.zotero.Zotero
+          - pro.affine.app
           - rest.insomnia.Insomnia
           - us.zoom.Zoom
           - website.i2pd.i2pd
