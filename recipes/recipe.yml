@@ -4,7 +4,7 @@ name: cosmicplasmic
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/cosmic-nvidia
+base-image: ghcr.io/ublue-os/cosmic-atomic-nvidia
 image-version: 42-20251020
 
 # module configuration, executed in order
