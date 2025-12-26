@@ -33,9 +33,7 @@ modules:
       - cmatrix  # - A scrolling 'Matrix'-like screen
       - containerd.io  # - Containerd
       - cryptsetup  # - Utility for setting up encrypted disk
-      - dbus-x11  # - X11-requiring add-ons for D-BUS
       - desktop-file-utils  # - Utilities for manipulating .desktop files
-      - devpod  # Dev environment manager
       - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
       - distrobox  # - Another tool for containerized command line environments on Linux
       - dmidecode  # - Tool to analyse BIOS DMI dat
@@ -74,7 +72,6 @@ modules:
       - input-remapper  # - An easy to use tool to change the behaviour of your input devices
       - iotop  # - Top like utility for I/O
       - just  # - Just a command runner
-      - libappindicator  # - Application indicators library
       - libglvnd-egl  # - EGL support for libglvnd
       - libglvnd-glx  # - GLX support for libglvnd
       - libglvnd-opengl  # - OpenGL support for libglvnd
@@ -96,7 +93,6 @@ modules:
       - openrgb-udev-rules  # - Udev rules for openrgb
       - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
       - p7zip  # - Very high compression ratio file archive
-      - p7zip-plugins  # - Very high compression ratio file archive
       - pciutils  # - PCI bus related utilities
       - plasma-workspace-x11 # - Xorg support for Plasma
       - powerline-fonts  # - Powerline symbol fon
