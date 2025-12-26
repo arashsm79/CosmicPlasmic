@@ -6,13 +6,13 @@ modules:
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       packages:
-        - repo: atim/starship
+        - repo: copr:copr.fedorainfracloud.org:atim:starship
           packages:
             - starship # The minimal, blazing-fast, and infinitely customizable prompt for any shell
-        - repo: mrduarte/LenovoLegionLinux
+        - repo: copr:copr.fedorainfracloud.org:mrduarte:LenovoLegionLinux
           packages:
             - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
-        - repo: sunwire/envycontrol
+        - repo: copr:copr.fedorainfracloud.org:sunwire:envycontrol
           packages:
             - python-envycontrol # - EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvidia Optimus systems
         - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
