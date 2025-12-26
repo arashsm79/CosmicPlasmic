@@ -92,7 +92,7 @@ modules:
       - nvtop  # - GPU process monitoring for various devices
       - openrgb-udev-rules  # - Udev rules for openrgb
       - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
-      - p7zip  # - Very high compression ratio file archive
+      - 7zip  # - Very high compression ratio file archive
       - pciutils  # - PCI bus related utilities
       - plasma-workspace-x11 # - Xorg support for Plasma
       - powerline-fonts  # - Powerline symbol fon
