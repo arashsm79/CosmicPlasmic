@@ -203,6 +203,7 @@ modules:
           - org.gimp.GIMP
           - org.hdfgroup.HDFView
           - org.inkscape.Inkscape
+          - org.kde.dolphin
           - org.kde.gwenview
           - org.kde.haruna
           - org.kde.kasts
@@ -242,10 +243,10 @@ modules:
         - Roboto
         - Open Sans
         
-  - type: akmods
-    base: main
-    install:
-      - v4l2loopback
+  # - type: akmods
+  #   base: main
+  #   install:
+  #     - v4l2loopback
         
   - type: script
     snippets:
