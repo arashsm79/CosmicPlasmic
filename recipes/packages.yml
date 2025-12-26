@@ -5,9 +5,9 @@ modules:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       copr:
-        - atim:starship
-        - mrduarte:LenovoLegionLinux
-        - sunwire:envycontrol
+        - atim/starship
+        - mrduarte/LenovoLegionLinux
+        - sunwire/envycontrol
     install:
       packages:
         - 7zip  # - Very high compression ratio file archive
