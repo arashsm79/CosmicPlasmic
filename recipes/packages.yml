@@ -18,7 +18,6 @@ modules:
         - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
         - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
         - android-tools  # - Android platform tools(adb, fastboot
-        - android-udev-rules  # - Udev rules for openrgb
         - autossh  # - Utility to autorestart SSH tunnels
         - bash-color-prompt  # - Color prompt for bash shel
         - bat  # - Cat clone with wings
