@@ -1,0 +1,138 @@
+modules:
+  - type: dnf
+    repos:
+      files:
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+        - https://repository.mullvad.net/rpm/stable/mullvad.repo
+    install:
+      packages:
+        - repo: atim/starship
+          packages:
+            - starship # The minimal, blazing-fast, and infinitely customizable prompt for any shell
+        - repo: mrduarte/LenovoLegionLinux
+          packages:
+            - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
+        - repo: sunwire/envycontrol
+          packages:
+            - python-envycontrol # - EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvidia Optimus systems
+        - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
+        - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
+        - android-tools  # - Android platform tools(adb, fastboot
+        - android-udev-rules  # - Udev rules for openrgb
+        - autossh  # - Utility to autorestart SSH tunnels
+        - bash-color-prompt  # - Color prompt for bash shel
+        - bat  # - Cat clone with wings
+        - bpftop # - Dynamic real-time view of running eBPF program
+        - btrfs-progs  # - Userspace programs for btrfs
+        - cifs-utils  # - Utilities for mounting and managing CIFS mounts
+        - cmatrix  # - A scrolling 'Matrix'-like screen
+        - containerd.io  # - Containerd
+        - cryptsetup  # - Utility for setting up encrypted disk
+        - desktop-file-utils  # - Utilities for manipulating .desktop files
+        - distrobox  # - Another tool for containerized command line environments on Linux
+        - dmidecode  # - Tool to analyse BIOS DMI dat
+        - docker-buildx-plugin  # - Build plugin for Docker
+        - docker-ce  # - Docker Engin
+        - docker-ce-cli  # - Docker CLI
+        - docker-compose-plugin  # - Docker Compose plugi
+        - dua-cli  # - Tool to conveniently learn about the disk usage of directories
+        - earlyoom # - Early OOM Daemon for Linux
+        - edk2-ovmf  # - UEFI firmware for x86_64 virtual machine
+        - fastfetch  # - Like neofetch, but much faster because written in 
+        - fd-find  # - Fd is a simple, fast and user-friendly alternative to find
+        - ffmpeg  # - A complete solution to record, convert and stream audio and video
+        - ffmpeg-libs  # - A complete solution to record, convert and stream audio and video
+        - ffmpegthumbnailer  # - A complete solution to record, convert and stream audio and video
+        - firewall-config  # - Firewall configuration application
+        - fish  # - A friendly interactive shell
+        - flatpak  # - Application deployment framework for desktop app
+        - flatpak-spawn  # - Application deployment framework for desktop apps
+        - fontconfig  # - Font configuration and customization library
+        - fribidi  # - Library implementing the Unicode Bidirectional Algorithm
+        - fuse  # - File System in Userspace (FUSE) v2 utilities
+        - fuse-libs  # - File System in Userspace (FUSE) v2 utilities
+        - fuse-sshfs  # - FUSE-Filesystem to access remote filesystems via SS
+        - fzf  # - A command-line fuzzy finder written in Go
+        - gcc  # - Various compilers (C, C++, Objective-C, ...)
+        - genisoimage  # - Creates an image of an ISO9660 file-system
+        - git  # - Fast Version Control Syste
+        - glx-utils  # - GLX utilitie
+        - grubby # - Command line tool for updating bootloader configs
+        - gwe  # - System utility designed to provide information of NVIDIA car
+        - harfbuzz  # - Text shaping library
+        - helix # - A post-modern modal text editor writt  en in Rust
+        - hplip  # - HP Linux Imaging and Printing Projec
+        - htop  # - Interactive process viewer
+        - input-remapper  # - An easy to use tool to change the behaviour of your input devices
+        - iotop  # - Top like utility for I/O
+        - just  # - Just a command runner
+        - libglvnd-egl  # - EGL support for libglvnd
+        - libglvnd-glx  # - GLX support for libglvnd
+        - libglvnd-opengl  # - OpenGL support for libglvnd
+        - libnotify  # - Desktop notification library
+        - libthai  # - Thai language support routines
+        - libva-utils  # - Tools for VAAPI (including vainfo)
+        - libvirt  # - Library providing a simple virtualization AP
+        - lm_sensors  # - Hardware monitoring tools
+        - lshw  # - Hardware lister
+        - lsof  # - A utility which lists open files on a Linux/UNIX system
+        - make  # - A GNU tool which simplifies the build process for users
+        - mesa-libGLU  # - Mesa libGLU librar
+        - mullvad-vpn  # - Actuall VP
+        - net-tools  # - Basic networking tools
+        - neovim # - Vim-fork focused on extensibility and agility
+        - nethogs  # - A tool resembling top for network traffi
+        - nvme-cli  # - NVMe management command line interface
+        - nvtop  # - GPU process monitoring for various devices
+        - openrgb-udev-rules  # - Udev rules for openrgb
+        - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
+        - 7zip  # - Very high compression ratio file archive
+        - pciutils  # - PCI bus related utilities
+        - plasma-workspace-x11 # - Xorg support for Plasma
+        - powerline-fonts  # - Powerline symbol fon
+        - powerstat  # - Measures the power consumption of a machine
+        - powertop  # - Power consumption monitor
+        - procs  # - Modern replacement for p
+        - psmisc  # - Utilities for managing processes on your system
+        - ptyxis # - A container oriented terminal for GNOME
+        - pulseaudio-utils  # - PulseAudio sound server utilities
+        - qemu  # - QEMU is a FAST! processor emulato
+        - qemu-char-spice  # - QEMU is a FAST! processor emulator
+        - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulato
+        - qemu-device-display-virtio-vga  # - QEMU is a FAST! processor emulato
+        - qemu-device-usb-redirect  # - QEMU is a FAST! processor emulato
+        - qemu-img  # - QEMU is a FAST! processor emulato
+        - qemu-system-x86-core  # - QEMU is a FAST! processor emulato
+        - qemu-user-binfmt  # - QEMU is a FAST! processor emulato
+        - qemu-user-static  # - QEMU is a FAST! processor emulato
+        - rclone  # - Rsync for cloud storage
+        - ripgrep  # - Line oriented search too
+        - samba  # - Server and Client software to interoperate with Windows machines
+        - samba-dcerpc  # - Server and Client software to interoperate with Windows machine
+        - samba-ldb-ldap-modules  # - Server and Client software to interoperate with Windows machine
+        - samba-winbind-clients  # - Server and Client software to interoperate with Windows machines
+        - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
+        - smartmontools  # - Tools for monitoring SMART capable hard disks
+        - squashfs-tools  # - Utility for the creation of squashfs filesystems
+        - symlinks  # - A utility which maintains a system's symbolic links
+        - tcpdump  # - A network traffic monitoring tool
+        - tmux  # - A terminal multiplexe
+        - traceroute  # - Traces the route taken by packets over an IPv4/IPv6 network
+        - tree  # - File system tree viewer
+        - udica  # - A tool for generating SELinux security policies for containers
+        - unrar  # - Wrapper package for unrar-free
+        - unzip  # - A utility for unpacking zip file
+        - v4l-utils  # - Utilities for video4linux and DVB device
+        - vazirmatn-fonts  # - A simple and legible Persian/Arabic typeface
+        - vim  # - A syntax checker for vim programming language
+        - virt-manager  # - Desktop tool for managing virtual machines via libvir
+        - virt-viewer  # - Virtual Machine Viewer
+        - vulkan-tools  # - Vulkan tool
+        - wireguard-tools  # - Fast, modern, secure VPN tunnel
+        - wireshark # - Network traffic analyzer
+        - wl-clipboard  # - Command-line copy/paste utilities for Wayland
+        - xorg-x11-drv-amdgpu # - AMD GPU video driver
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
