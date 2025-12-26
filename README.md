@@ -1,11 +1,8 @@
 # Cosmic Plasmic
 
-Cosmic desktop and KDE Plasma desktop in one image.
+Cosmic desktop and KDE Plasma apps in one image.
 
 ## Installation
-
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
