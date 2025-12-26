@@ -4,17 +4,13 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
+      copr:
+        - atim:starship
+        - mrduarte:LenovoLegionLinux
+        - sunwire:envycontrol
     install:
       packages:
-        - repo: copr:copr.fedorainfracloud.org:atim:starship
-          packages:
-            - starship # The minimal, blazing-fast, and infinitely customizable prompt for any shell
-        - repo: copr:copr.fedorainfracloud.org:mrduarte:LenovoLegionLinux
-          packages:
-            - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
-        - repo: copr:copr.fedorainfracloud.org:sunwire:envycontrol
-          packages:
-            - python-envycontrol # - EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvidia Optimus systems
+        - 7zip  # - Very high compression ratio file archive
         - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
         - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
         - android-tools  # - Android platform tools(adb, fastboot
@@ -29,6 +25,7 @@ modules:
         - cryptsetup  # - Utility for setting up encrypted disk
         - desktop-file-utils  # - Utilities for manipulating .desktop files
         - distrobox  # - Another tool for containerized command line environments on Linux
+        - dkms-LenovoLegionLinux # Driver and tools for controlling Lenovo Legion laptops in Linux including fan control and power mode.
         - dmidecode  # - Tool to analyse BIOS DMI dat
         - docker-buildx-plugin  # - Build plugin for Docker
         - docker-ce  # - Docker Engin
@@ -78,14 +75,13 @@ modules:
         - make  # - A GNU tool which simplifies the build process for users
         - mesa-libGLU  # - Mesa libGLU librar
         - mullvad-vpn  # - Actuall VP
-        - net-tools  # - Basic networking tools
         - neovim # - Vim-fork focused on extensibility and agility
+        - net-tools  # - Basic networking tools
         - nethogs  # - A tool resembling top for network traffi
         - nvme-cli  # - NVMe management command line interface
         - nvtop  # - GPU process monitoring for various devices
         - openrgb-udev-rules  # - Udev rules for openrgb
         - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
-        - 7zip  # - Very high compression ratio file archive
         - pciutils  # - PCI bus related utilities
         - plasma-workspace-x11 # - Xorg support for Plasma
         - powerline-fonts  # - Powerline symbol fon
@@ -95,6 +91,7 @@ modules:
         - psmisc  # - Utilities for managing processes on your system
         - ptyxis # - A container oriented terminal for GNOME
         - pulseaudio-utils  # - PulseAudio sound server utilities
+        - python-envycontrol # - EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvidia Optimus systems
         - qemu  # - QEMU is a FAST! processor emulato
         - qemu-char-spice  # - QEMU is a FAST! processor emulator
         - qemu-device-display-virtio-gpu  # - QEMU is a FAST! processor emulato
@@ -113,6 +110,7 @@ modules:
         - samba-winbind-modules  # - Server and Client software to interoperate with Windows machines
         - smartmontools  # - Tools for monitoring SMART capable hard disks
         - squashfs-tools  # - Utility for the creation of squashfs filesystems
+        - starship # The minimal, blazing-fast, and infinitely customizable prompt for any shell
         - symlinks  # - A utility which maintains a system's symbolic links
         - tcpdump  # - A network traffic monitoring tool
         - tmux  # - A terminal multiplexe
