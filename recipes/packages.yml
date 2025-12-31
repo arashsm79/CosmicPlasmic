@@ -22,6 +22,7 @@ modules:
         - cifs-utils  # - Utilities for mounting and managing CIFS mounts
         - cmatrix  # - A scrolling 'Matrix'-like screen
         - containerd.io  # - Containerd
+        - copyq # - Advanced clipboard manager
         - cryptsetup  # - Utility for setting up encrypted disk
         - desktop-file-utils  # - Utilities for manipulating .desktop files
         - distrobox  # - Another tool for containerized command line environments on Linux
