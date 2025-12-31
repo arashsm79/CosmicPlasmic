@@ -53,6 +53,7 @@ modules:
         - genisoimage  # - Creates an image of an ISO9660 file-system
         - git  # - Fast Version Control Syste
         - glx-utils  # - GLX utilitie
+        - gnome-keyring # - Framework for managing passwords and other secrets
         - grubby # - Command line tool for updating bootloader configs
         - gwe  # - System utility designed to provide information of NVIDIA car
         - harfbuzz  # - Text shaping library
