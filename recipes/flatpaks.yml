@@ -56,8 +56,6 @@ modules:
           - org.gimp.GIMP
           - org.hdfgroup.HDFView
           - org.inkscape.Inkscape
-          - org.kde.ark
-          - org.kde.dolphin
           - org.kde.gwenview
           - org.kde.haruna
           - org.kde.kasts
