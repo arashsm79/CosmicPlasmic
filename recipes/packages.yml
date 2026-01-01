@@ -82,6 +82,13 @@ modules:
         - neovim # - Vim-fork focused on extensibility and agility
         - net-tools  # - Basic networking tools
         - nethogs  # - A tool resembling top for network traffi
+        - NetworkManager # - Network connection manager and user applications
+        - NetworkManager-openconnect # - NetworkManager VPN plugin for openconnect
+        - NetworkManager-openvpn # - NetworkManager VPN plugin for OpenVPN
+        - NetworkManager-fortisslvpn # - NetworkManager VPN plugin for Fortinet compatible SSLVPN
+        - NetworkManager-ssh # - NetworkManager VPN plugin for SSH
+        - NetworkManager-l2tp # - NetworkManager VPN plugin for L2TP and L2TP/IPsec
+        - network-manager-applet # - A network control and status applet for NetworkManager
         - nvme-cli  # - NVMe management command line interface
         - nvtop  # - GPU process monitoring for various devices
         - openrgb-udev-rules  # - Udev rules for openrgb
