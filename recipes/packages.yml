@@ -14,6 +14,7 @@ modules:
         - aircrack-ng # - Tools for auditing 802.11 (wireless) networks
         - alacritty  # - Fast, cross-platform, OpenGL terminal emulator
         - android-tools  # - Android platform tools(adb, fastboot
+        - ark # - Archive manager
         - autossh  # - Utility to autorestart SSH tunnels
         - bash-color-prompt  # - Color prompt for bash shel
         - bat  # - Cat clone with wings
@@ -31,7 +32,8 @@ modules:
         - docker-buildx-plugin  # - Build plugin for Docker
         - docker-ce  # - Docker Engin
         - docker-ce-cli  # - Docker CLI
-        - docker-compose-plugin  # - Docker Compose plugi
+        - docker-compose-plugin  # - Docker Compose plugin
+        - dolphin # - KDE File Manager
         - dua-cli  # - Tool to conveniently learn about the disk usage of directories
         - earlyoom # - Early OOM Daemon for Linux
         - edk2-ovmf  # - UEFI firmware for x86_64 virtual machine
