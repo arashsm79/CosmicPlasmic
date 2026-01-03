@@ -13,6 +13,12 @@ modules:
   #   base: main
   #   install:
   #     - v4l2loopback
+
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+    update-interval: 7d
+    auto-upgrade: false
         
   - type: script
     snippets:
