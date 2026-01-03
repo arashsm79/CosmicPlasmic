@@ -22,7 +22,6 @@ modules:
           - com.jgraph.drawio.desktop
           - com.logseq.Logseq
           - com.mojang.Minecraft
-          - com.nextcloud.desktopclient.nextcloud
           - com.obsproject.Studio
           - com.ranfdev.Geopard
           - com.rtosta.zapzap
@@ -52,6 +51,7 @@ modules:
           - org.blender.Blender
           - org.chromium.Chromium
           - org.filezillaproject.Filezilla
+          - org.flameshot.Flameshot
           - org.getmonero.Monero
           - org.gimp.GIMP
           - org.hdfgroup.HDFView
