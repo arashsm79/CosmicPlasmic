@@ -2,7 +2,7 @@ name: cosmicplasmic
 description: Greatest bootc image of all time.
 
 base-image: ghcr.io/blue-build/base-images/fedora-cosmic-nvidia
-image-version: 20260102-43
+image-version: latest
 
 modules:
   - from-file: packages.yml
