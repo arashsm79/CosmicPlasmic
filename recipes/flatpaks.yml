@@ -19,6 +19,7 @@ modules:
           - com.github.xournalpp.xournalpp
           - com.github.zocker_160.SyncThingy
           - com.jeffser.Alpaca
+          - com.jeffser.Alpaca.Plugins.Ollama
           - com.jgraph.drawio.desktop
           - com.logseq.Logseq
           - com.mojang.Minecraft
