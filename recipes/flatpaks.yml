@@ -60,6 +60,7 @@ modules:
           - org.kde.gwenview
           - org.kde.haruna
           - org.kde.kasts
+          - org.kde.kate
           - org.kde.kcalc
           - org.kde.kdenlive
           - org.kde.kolourpaint
