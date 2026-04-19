@@ -47,6 +47,7 @@ modules:
         - flatpak  # - Application deployment framework for desktop app
         - flatpak-spawn  # - Application deployment framework for desktop apps
         - fontconfig  # - Font configuration and customization library
+        - freerdp # - Free implementation of the Remote Desktop Protocol (RDP)
         - fribidi  # - Library implementing the Unicode Bidirectional Algorithm
         - fuse  # - File System in Userspace (FUSE) v2 utilities
         - fuse-libs  # - File System in Userspace (FUSE) v2 utilities
