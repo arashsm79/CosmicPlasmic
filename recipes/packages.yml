@@ -67,6 +67,7 @@ modules:
         - input-remapper  # - An easy to use tool to change the behaviour of your input devices
         - iotop  # - Top like utility for I/O
         - just  # - Just a command runner
+        - kde-partitionmanager  # - KDE Partition Manager
         - libglvnd-egl  # - EGL support for libglvnd
         - libglvnd-glx  # - GLX support for libglvnd
         - libglvnd-opengl  # - OpenGL support for libglvnd
