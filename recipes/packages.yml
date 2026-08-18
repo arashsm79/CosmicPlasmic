@@ -4,6 +4,7 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
+        - https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Fedora_42/owncloud-client.repo
       copr:
         - atim/starship
         - mrduarte/LenovoLegionLinux
@@ -95,6 +96,7 @@ modules:
         - nvtop  # - GPU process monitoring for various devices
         - openrgb-udev-rules  # - Udev rules for openrgb
         - openssl  # - Utilities from the general purpose cryptography library with TLS implementation
+        - owncloud-client # - OwnCloud Linux client
         - pciutils  # - PCI bus related utilities
         - plasma-workspace-x11 # - Xorg support for Plasma
         - powerline-fonts  # - Powerline symbol fon
