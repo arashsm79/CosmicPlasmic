@@ -5,6 +5,7 @@ modules:
         scope: system
         install:
           - app.grayjay.Grayjay
+          - com.adilhanney.saber
           - com.anydesk.Anydesk
           - com.belmoussaoui.Authenticator
           - com.bitwarden.desktop
