@@ -5,7 +5,6 @@ modules:
         scope: system
         install:
           - app.grayjay.Grayjay
-          - com.adilhanney.saber
           - com.anydesk.Anydesk
           - com.belmoussaoui.Authenticator
           - com.bitwarden.desktop
@@ -34,6 +33,7 @@ modules:
           - com.valvesoftware.Steam
           - com.visualstudio.code
           - com.zettlr.Zettlr
+          - dev.linwood.butterfly
           - dev.zed.Zed
           - fr.handbrake.ghb
           - im.riot.Riot
